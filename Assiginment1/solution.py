@@ -165,11 +165,11 @@ def vigenere(op, input, out, key):
             f.close()
 
 
-def main(agr):
-    if arg[1] == "shift":
+def main(agrv):
+    if argv[1] == "shift":
         operation, inputFile, outFile, key = argv[2:]
         shift(operation, inputFile, outFile, key)
-    elif arg[1] == "affine":
+    elif argv[1] == "affine":
         operation, inputFile, outFile, key1, key2 = argv[2:]
         affine(operation, inputFile, outFile, key1, key2)
     elif argv[1] == "vigenere":
